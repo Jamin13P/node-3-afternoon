@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.post("/api/products", pCtrl.create);
 app.get("/api/products", pCtrl.getAll);
-app.get("/api/products/:id", pCtrl.getOne);
+app.get("/api/product/:id", pCtrl.getOne);
 app.put("/api/products/:id", pCtrl.update);
 app.delete("/api/products/:id", pCtrl.delete);
 
