@@ -12,6 +12,7 @@ massive({
 })
   .then((dbInstance) => {
     app.set("db", dbInstance);
+    console.log("database connected");
   })
   .catch((err) => console.log(err));
 
